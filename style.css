@@ -1,0 +1,204 @@
+.fira-header {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.crimson-body {
+    font-family: 'Crimson Text', serif;
+}
+
+/* header section */
+body {
+    margin: 0;
+}
+
+.header-section {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* background-color: #232629; */
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.header-section::before {
+    content: "";
+    background-image: url("./assets/images/header-img.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 25%;
+}
+
+.header-section p {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: #dd5333;
+}
+
+.title {
+    text-align: center;
+    min-width: 35%;
+    font-size: 6rem;
+}
+
+.subtitle {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+hr {
+    margin-top: 35px;
+    width: 8%;
+    background-color: white;
+}
+
+footer {
+    font-size: smaller;
+    font-style: italic;
+    margin-top: 35px;
+}
+
+/* body section */
+
+.body-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 35px
+}
+
+.title-txt {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.sub-txt {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* books grid */
+
+.books {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-columns: auto;
+    margin-top: 35px;
+}
+
+.books span {
+    font-weight: bold;
+}
+
+.gen-txt {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.book {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.cover1 {
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+.cover2 {
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+.photo-cred {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,0), #dd5333); /* gradient bg */
+    opacity: 0;
+    transition: opacity 0.30s;
+    font-size: 1rem;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+/* hover animations */
+
+@media (hover: hover) {
+    .photo-cred:hover {
+        opacity: 85%;
+    }
+}
+
+@media (hover: none) {
+    .photo-cred {
+        background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,0), #dd5333); /* gradient bg */
+        opacity: 75%;
+    }
+}
+
+/* about me section */
+
+.about-me-section {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.about-me-section > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    opacity: 35%;
+}
+
+.text-content {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+.card {
+    width: 75%;
+}
